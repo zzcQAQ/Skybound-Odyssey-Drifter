@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://blyc0sgupqr18"]
+
+[ext_resource type="Texture2D" uid="uid://bwdt4xmdxyxu2" path="res://accests/basic_core.png" id="1_3vyb7"]
+
+[node name="Player" type="Node2D" unique_id=1971131357]
+
+[node name="BasicCore" type="Sprite2D" parent="." unique_id=589384024]
+texture = ExtResource("1_3vyb7")

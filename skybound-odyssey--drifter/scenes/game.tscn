@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://ctnmbeupew5my"]
+
+[ext_resource type="PackedScene" uid="uid://c14enu5parerm" path="res://scenes/back_ground.tscn" id="1_uwrxv"]
+[ext_resource type="PackedScene" uid="uid://blyc0sgupqr18" path="res://scenes/player.tscn" id="2_yqjtg"]
+
+[node name="Game" type="Node2D" unique_id=346884247]
+
+[node name="BackGround" parent="." unique_id=238695073 instance=ExtResource("1_uwrxv")]
+
+[node name="Player" parent="." unique_id=1971131357 instance=ExtResource("2_yqjtg")]

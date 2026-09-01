@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://balf0j1kqcq8i"]
+
+[ext_resource type="Script" uid="uid://dleqtrulfx5jq" path="res://scripts/grid_manager.gd" id="1_y7r42"]
+
+[node name="ShipBuilder" type="Control" unique_id=1768928031]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="GridManager" type="Node2D" parent="." unique_id=553466933]
+script = ExtResource("1_y7r42")
+
+[node name="Buildings" type="Node2D" parent="." unique_id=1390012382]
+
+[node name="Preview" type="Sprite2D" parent="." unique_id=917935476]
+
+[node name="UI" type="Control" parent="." unique_id=629118854]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ShipCore" type="Node2D" parent="." unique_id=165293233]
