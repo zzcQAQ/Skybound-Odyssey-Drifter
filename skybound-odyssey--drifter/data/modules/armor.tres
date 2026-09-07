@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="ModuleData" format=3 uid="uid://ndlfbynqaehg"]
+
+[ext_resource type="Script" uid="uid://bcgetvqyoatti" path="res://scripts/ModuleData.gd" id="1_xp51l"]
+
+[resource]
+script = ExtResource("1_xp51l")
+metadata/_custom_type_script = "uid://bcgetvqyoatti"
