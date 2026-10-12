@@ -5,7 +5,10 @@ extends Resource
 @export var module_name: String = "模块"
 @export var description: String = ""
 
-@export_category("外观")
+@export_category("场景")
+@export var scene: PackedScene
+
+@export_category("贴图")
 @export var texture: Texture2D
 
 @export_category("网格")

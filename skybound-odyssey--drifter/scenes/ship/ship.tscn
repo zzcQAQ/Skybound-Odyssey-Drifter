@@ -1,3 +1,10 @@
 [gd_scene format=3 uid="uid://bci1rjevyu3i7"]
 
+[ext_resource type="Script" uid="uid://c3jblw7kqmeng" path="res://scripts/ship/ship.gd" id="1_u5c2e"]
+[ext_resource type="Script" uid="uid://b6itj8lvo5ei3" path="res://scripts/ship/ship_grid.gd" id="2_wxx60"]
+
 [node name="Ship" type="Node2D" unique_id=1627299550]
+script = ExtResource("1_u5c2e")
+
+[node name="ShipGrid" type="Node2D" parent="." unique_id=1150494998]
+script = ExtResource("2_wxx60")

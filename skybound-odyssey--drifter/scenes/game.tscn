@@ -1,13 +1,13 @@
 [gd_scene format=3 uid="uid://ctnmbeupew5my"]
 
-[ext_resource type="PackedScene" uid="uid://c14enu5parerm" path="res://scenes/back_ground.tscn" id="1_uwrxv"]
-[ext_resource type="PackedScene" uid="uid://blyc0sgupqr18" path="res://scenes/player.tscn" id="2_yqjtg"]
-[ext_resource type="PackedScene" uid="uid://balf0j1kqcq8i" path="res://scenes/ship_builder.tscn" id="3_lnu2h"]
+[node name="Game" type="Node2D" unique_id=1456356237]
 
-[node name="Game" type="Node2D" unique_id=346884247]
+[node name="World" type="Node2D" parent="." unique_id=1846278482]
 
-[node name="BackGround" parent="." unique_id=238695073 instance=ExtResource("1_uwrxv")]
+[node name="PlayerSHip" type="CharacterBody2D" parent="World" unique_id=1283455472]
 
-[node name="Player" parent="." unique_id=1971131357 instance=ExtResource("2_yqjtg")]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="World/PlayerSHip" unique_id=585810471]
+polygon = PackedVector2Array(0, -4, -3, 3, 3, 3)
 
-[node name="ShipBuilder" parent="." unique_id=1768928031 instance=ExtResource("3_lnu2h")]
+[node name="Polygon2D" type="Polygon2D" parent="World/PlayerSHip/CollisionPolygon2D" unique_id=1059685299]
+polygon = PackedVector2Array(0, -4, -3, 3, 3, 3)
