@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://dtdx7u16g1imi"]
+
+[ext_resource type="Texture2D" uid="uid://d34u6k5gcu0ie" path="res://accests/sprites/markers/move_target.png" id="1_67r5o"]
+[ext_resource type="Script" uid="uid://cty1k5ty7qg42" path="res://scripts/markers/move_target.gd" id="1_vj8t8"]
+
+[node name="MoveTarget" type="Node2D" unique_id=1248827417]
+script = ExtResource("1_vj8t8")
+
+[node name="MoveTarget" type="Sprite2D" parent="." unique_id=1017421021]
+texture = ExtResource("1_67r5o")

@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://d3akrem5fj4cl"]
+
+[ext_resource type="Script" uid="uid://cmxnx6mprbnld" path="res://scripts/player/player_ship.gd" id="1_70sr0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_co6qv"]
+size = Vector2(30, 43)
+
+[node name="PlayerShip" type="CharacterBody2D" unique_id=955077124]
+script = ExtResource("1_70sr0")
+
+[node name="Polygon2D" type="Polygon2D" parent="." unique_id=1778644376]
+position = Vector2(2.2798777e-06, -0.22857057)
+scale = Vector2(5.1260014, 6.2780943)
+color = Color(0.043137256, 1, 1, 1)
+polygon = PackedVector2Array(-2.0116566e-07, -3.984305, -3, 3, 3, 3)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2119830550]
+position = Vector2(0, -3.5)
+shape = SubResource("RectangleShape2D_co6qv")

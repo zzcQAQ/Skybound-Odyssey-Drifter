@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://c14enu5parerm"]
 
-[ext_resource type="Texture2D" uid="uid://wgva4onep04o" path="res://accests/nebula.png" id="1_8lwin"]
+[ext_resource type="Texture2D" uid="uid://wgva4onep04o" path="res://accests/sprites/nebula.png" id="1_8lwin"]
 
 [node name="BackGround" type="Node2D" unique_id=590993799]
 

@@ -1,13 +1,20 @@
 [gd_scene format=3 uid="uid://ctnmbeupew5my"]
 
+[ext_resource type="PackedScene" uid="uid://c14enu5parerm" path="res://scenes/back_ground.tscn" id="1_uwrxv"]
+[ext_resource type="PackedScene" uid="uid://d3akrem5fj4cl" path="res://scenes/ship/player_ship.tscn" id="2_yqjtg"]
+[ext_resource type="PackedScene" uid="uid://dtdx7u16g1imi" path="res://scenes/markers/move_target.tscn" id="3_lnu2h"]
+
 [node name="Game" type="Node2D" unique_id=1456356237]
 
 [node name="World" type="Node2D" parent="." unique_id=1846278482]
 
-[node name="PlayerSHip" type="CharacterBody2D" parent="World" unique_id=1283455472]
+[node name="BackGround" parent="World" unique_id=590993799 instance=ExtResource("1_uwrxv")]
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="World/PlayerSHip" unique_id=585810471]
-polygon = PackedVector2Array(0, -4, -3, 3, 3, 3)
+[node name="Player" type="Node2D" parent="World" unique_id=1748371092]
 
-[node name="Polygon2D" type="Polygon2D" parent="World/PlayerSHip/CollisionPolygon2D" unique_id=1059685299]
-polygon = PackedVector2Array(0, -4, -3, 3, 3, 3)
+[node name="PlayerShip" parent="World/Player" unique_id=1383636099 node_paths=PackedStringArray("move_target") instance=ExtResource("2_yqjtg")]
+move_target = NodePath("../MoveTarget")
+
+[node name="Camera2D" type="Camera2D" parent="World/Player/PlayerShip" unique_id=1696429290]
+
+[node name="MoveTarget" parent="World/Player" unique_id=1248827417 instance=ExtResource("3_lnu2h")]
